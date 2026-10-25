@@ -4,12 +4,12 @@ income = numpy.arange(100, 400, 10).reshape(3, 10)
 print("Original income:")
 print(income)
 
-net_income = income * STANDARD_TAX_RATE
+net_income = income * 0.7
 print("Net income:")
 print(net_income)
 
-new_income = net_income.copy()
-new_income[:, 4:7] = income[:, 4:7] * REDUCED_TAX_RATE
+new_income = income * 0.7
+new_income[:, 4:7] = income[:, 4:7] * 0.6
 print("Updated net income:")
 print(new_income)
 
